@@ -15,9 +15,9 @@ age int,
 country varchar(50)
 );
 
-INSERT INTO class(id, name)
+INSERT INTO class(name)
 VALUES
-('Trung Bao');
+('Trung Bao1'),('Trung Bao2'),('Trung Bao3');
 
 INSERT INTO teacher(name, age, country)
 VALUES
@@ -25,6 +25,3 @@ VALUES
 
 SELECT * FROM `class`;
 SELECT * FROM teacher;
-
-
-
