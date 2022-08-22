@@ -70,16 +70,17 @@ SELECT * FROM `Subject`
 WHERE Credit BETWEEN 3 AND 5;
 
 -- 4 Thay đổi mã lớp(ClassID) của sinh viên có tên ‘Hung’ là 2.
-SELECT * FROM Student
-WHERE StudentName = 'Hung';
 UPDATE Student
-SET ClassId = 2;
+SET ClassId = 2
+WHERE StudentName = 'Hung';
+SELECT * FROM Student;
+SET SQL_SAFE_UPDATES = 0;
 
 -- 5 Hiển thị các thông tin: StudentName, SubName, Mark. Dữ liệu sắp xếp theo điểm thi (mark) giảm dần. nếu trùng sắp theo tên tăng dần.
 SELECT  s.StudentName , m.Mark ,SubName FROM Student s 
 INNER JOIN mark m ON s.StudentId= m.StudentId
-INNER JOIN SUBJECT su ON m.SubId=su.SubId
-ORDER BY m.Mark DESC , s.StudentName  ASC
+INNER JOIN `SUBJECT` su ON m.SubId= su.SubId
+ORDER BY m.Mark DESC, s.StudentName  ASC
 
 
 
