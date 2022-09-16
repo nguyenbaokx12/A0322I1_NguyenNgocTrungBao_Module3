@@ -1,0 +1,4 @@
+com/example/HienThiDanhSachKhachHang/Customer.java
+ com.example.HienThiDanhSachKhachHang.Customer
+com/example/HienThiDanhSachKhachHang/CustomersServlet.java
+ com.example.HienThiDanhSachKhachHang.CustomersServlet
