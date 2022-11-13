@@ -17,11 +17,62 @@
         html {
             font-family: 'DM Sans', sans-serif;
         }
+
+        .add {
+            padding: 10px;
+            margin-top: 20px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+        }
+        .add:hover{
+            color: chartreuse;
+        }
+
+        .edit{
+            text-decoration: none;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        .edit:hover{
+            color: chartreuse;
+
+        }
+
+        .delete{
+            text-decoration: none;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .delete:hover{
+            color: chartreuse;
+        }
+
+        .sub>th{
+            padding-right: 100px;
+            border-bottom: 1px solid black;
+            padding-top: 30px;
+
+        }
+
+        .sub-s>td{
+            padding-right: 100px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            border-bottom: 1px solid black;
+        }
     </style>
 </head>
 <body>
 <p>
-    <a href="/User?action=create">Add new user</a>
+    <a class="add" href="/User?action=create">Add new user</a>
 </p>
 <p>
 <form action="/User" method="post">
@@ -30,8 +81,9 @@
     <input type="submit" value="Search">
 </form>
 </p>
-<table>
-    <tr>
+<table cellspacing="0">
+    <tr class="sub">
+        <th>STT</th>
         <th>ID</th>
         <th>Name</th>
         <th>Email</th>
@@ -39,14 +91,15 @@
         <th>Edit</th>
         <th>Delete</th>
     </tr>
-    <c:forEach var="user" items="${listUser}">
-        <tr>
+    <c:forEach var="user" items="${listUser}" varStatus="varStatus">
+        <tr class="sub-s">
+            <td>${varStatus.count}</td>
             <td>${user.id}</td>
             <td>${user.name}</td>
             <td>${user.email}</td>
             <td>${user.country}</td>
-            <td><a href="/User?action=update&id=${user.id}">Edit</a></td>
-            <td><a href="/User?action=delete&id=${user.id}">Delete</a></td>
+            <td><a class="edit" href="/User?action=update&id=${user.id}">Edit</a></td>
+            <td><a class="delete" href="/User?action=delete&id=${user.id}">Delete</a></td>
         </tr>
     </c:forEach>
 </table>

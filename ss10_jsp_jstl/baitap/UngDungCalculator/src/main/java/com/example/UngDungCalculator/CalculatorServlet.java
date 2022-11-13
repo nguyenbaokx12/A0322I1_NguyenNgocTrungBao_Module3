@@ -45,7 +45,7 @@ public class CalculatorServlet extends HttpServlet {
             request.setAttribute("result", result);
             request.setAttribute("operator", operator);
             request.setAttribute("error", error);
-            request.getRequestDispatcher("result.jsp").forward(request,response);
+            request.getRequestDispatcher("WEB-INF/result.jsp").forward(request,response);
 
     }
 

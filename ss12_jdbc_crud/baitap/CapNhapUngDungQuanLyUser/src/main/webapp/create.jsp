@@ -3,6 +3,10 @@
 <html>
 <head>
     <title>CREATE</title>
+    <a href="/User">Back to list product</a>
+    <c:if test="${mess!=null}">
+        <p style="color: red">${mess}</p>
+    </c:if>
 </head>
 <body>
 <form method="post">

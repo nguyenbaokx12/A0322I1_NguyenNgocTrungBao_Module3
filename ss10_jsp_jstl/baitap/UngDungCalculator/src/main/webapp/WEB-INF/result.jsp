@@ -12,15 +12,16 @@
 </head>
 <body>
     <h2>Result</h2>
-    <c:if test='${error!=""}'>
+    <c:if test='${error=""}'>
         <p>${error}</p>
     </c:if>
 
     <c:if test='${error==""}'>
-        <p>${firstNum}</p>
+       <span> <p>${firstNum}</p>
         <p>${operator}</p>
         <p>${secondNum}</p>=
         <p>${result}</p>
+           </span>
     </c:if>
 </body>
 </html>
