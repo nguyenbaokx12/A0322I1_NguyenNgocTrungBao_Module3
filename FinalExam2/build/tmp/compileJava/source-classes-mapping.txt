@@ -1,0 +1,24 @@
+com/example/FinalExam2/model/BenhAn.java
+ com.example.FinalExam2.model.BenhAn
+com/example/FinalExam2/service/impl/BenhAnService.java
+ com.example.FinalExam2.service.impl.BenhAnService
+com/example/FinalExam2/repository/impl/BenhAnRepository.java
+ com.example.FinalExam2.repository.impl.BenhAnRepository
+com/example/FinalExam2/repository/impl/BaseRepository.java
+ com.example.FinalExam2.repository.impl.BaseRepository
+com/example/FinalExam2/repository/IBenhAn.java
+ com.example.FinalExam2.repository.IBenhAn
+com/example/FinalExam2/service/IBenhAnService.java
+ com.example.FinalExam2.service.IBenhAnService
+com/example/FinalExam2/repository/impl/BenhNhanRepository.java
+ com.example.FinalExam2.repository.impl.BenhNhanRepository
+com/example/FinalExam2/service/impl/BenhNhanService.java
+ com.example.FinalExam2.service.impl.BenhNhanService
+com/example/FinalExam2/model/BenhNhan.java
+ com.example.FinalExam2.model.BenhNhan
+com/example/FinalExam2/repository/IBenhNhan.java
+ com.example.FinalExam2.repository.IBenhNhan
+com/example/FinalExam2/service/IBenhNhanService.java
+ com.example.FinalExam2.service.IBenhNhanService
+com/example/FinalExam2/controller/BenhVienServlet.java
+ com.example.FinalExam2.controller.BenhVienServlet
